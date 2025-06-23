@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1000px; /* Aumenta el ancho máximo */
+  min-height: 150px; /* Agrega una altura mínima para hacerlo más largo */
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row; /* Cambia a fila para alinear los botones horizontalmente */
+  gap: 1rem;
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center;     /* Centra los botones verticalmente */
+}
+
+button {
+  background: #282828;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Hace los botones redondos */
+  width: 48px;
+  height: 48px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: #444;
+}
